@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; 
+    }
+    
+    .container{
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+    }
+    
+    header{
+        background-color: #3a3a3a;
+        grid-area: 1/1/2/-1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    h1{
+        font-size: 3.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+    
+    h1 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul{
+        padding-left: .5em;
+        list-style: none;
+        display: flex;
+    }
+    
+    nav a{
+        padding: .5em;
+        display: block;
+        margin-left: 4em;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .przycisk{
+        background-color: #56c9d6;
+        border-radius: 5px;
+    }
+    
+    .sphoto{
+        grid-area: 2/1/3/-1;
+    }
+    
+    .mainphotos{
+        margin: .6em;
+        margin-left: 0em;
+        padding-top: 4em;
+        padding-bottom: 3em;
+        grid-area: 3/1/4/-1;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+    }
+    
+    .mainphotos article{
+        padding: 2.5em;
+    }
+    .mainphotos article h2{
+        font-size: 1.5em;
+        padding-bottom: 1.2em;
+    }
+    
+    .mainphotos article p{
+        font-size: 17px;
+    }
+    
+    .downphotos{
+        background-color: #dadada;
+        grid-area: 4/1/5/-1;
+        display: grid;
+        grid-template-columns: 19% 32% 32% 19%;
+        padding-top: 3.5em;
+        padding-bottom: 4em;
+        color: #3b3b3b;
+        font-size: 14px;
+    }
+
+        .photos article{
+        margin-right: 4em;
+    }
+    
+    .photos p{
+        display: flex;
+        flex-basis: 60%;
+        color: #3b3b3b;
+    }
+    
+    .photo img{
+        padding-top: 3em;
+        padding-bottom: 2.7em;
+    }
+    
+    .photo p{
+        color: #3b3b3b;
+    }
+    
+    .photos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    
+    .photos article{
+        padding-top: 3em;
+        display: flex;
+    }
+    
+    .photos img{
+        margin-right: 2em;
+    }
+    
+    .info main{
+        padding-right: 3em;
+    }
+    .info p{
+        margin-top: 2.5em;
+        color: #3b3b3b;
+    }
+    
+    .info aside h2{
+        padding-bottom: 0.7em;
+    }
+
+    .info{
+        background-color: #b8b8b8;
+        grid-area: 5/1/6/-1;
+        display: grid;
+        grid-template-columns: 18% 44% 17% 21%;
+        color: #3b3b3b;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        font-size: 15px;
+    }
+    
+    .info aside li{
+        list-style: none;
+        padding-top: 1.9em;
+    }
+    
+    .info aside a{
+        color: #3b3b3b;
+    }
+    
+    footer{
+        background-color: #3a3a3a;
+        grid-area: 6/1/7/-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #bdbdbd;
+        padding: 2em;
+        text-align: center;
+    }
